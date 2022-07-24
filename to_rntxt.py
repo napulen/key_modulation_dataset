@@ -129,7 +129,7 @@ if __name__ == '__main__':
             if not f.endswith(".krn"):
                 continue
             path = os.path.join(root, f)
-            pathslugified = f"moduton-{path.replace('./', '').replace('/', '-').replace('.krn', '')}"
+            pathslugified = f"keymodt-{path.replace('./', '').replace('/', '-').replace('.krn', '')}"
             print(path)
             score = music21.converter.parse(path)
             df, tss, mss = get_dataframe_from_file(score)
